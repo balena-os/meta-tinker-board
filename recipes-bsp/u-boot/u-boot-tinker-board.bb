@@ -23,8 +23,11 @@ inherit pythonnative
 IDBLOADER = "idbloader.img"
 
 do_compile_append () {
-    # Burn bootloader
+    cp ${B}/spl/${SPL_BINARY} ${B}/${SPL_BINARY}
+}
+
+do_deploy_append () {
+    # Create bootloader image
     ${B}/tools/mkimage -n ${SOC_FAMILY} -T rksd -d ${B}/spl/${SPL_BINARY} ${DEPLOYDIR}/${IDBLOADER}
     cat ${B}/u-boot.bin >>${DEPLOYDIR}/${IDBLOADER}
-    cp ${B}/spl/${SPL_BINARY} ${B}/${SPL_BINARY}
 }
