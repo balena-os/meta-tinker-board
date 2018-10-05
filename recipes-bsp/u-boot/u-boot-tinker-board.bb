@@ -24,7 +24,7 @@ IDBLOADER = "idbloader.img"
 
 do_compile_append () {
     # Burn bootloader
-    ${B}/tools/mkimage -n ${SOC_FAMILY} -T rksd -d ${B}/spl/${SPL_BINARY} ${DEPLOY_DIR_IMAGE}/${IDBLOADER}
-    cat ${B}/u-boot.bin >>${DEPLOY_DIR_IMAGE}/${IDBLOADER}
+    ${B}/tools/mkimage -n ${SOC_FAMILY} -T rksd -d ${B}/spl/${SPL_BINARY} ${DEPLOYDIR}/${IDBLOADER}
+    cat ${B}/u-boot.bin >>${DEPLOYDIR}/${IDBLOADER}
     cp ${B}/spl/${SPL_BINARY} ${B}/${SPL_BINARY}
 }
