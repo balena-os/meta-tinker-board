@@ -11,7 +11,7 @@ MACHINEOVERRIDES =. "mali-gpu:mali-midgard:"
 PREFERRED_PROVIDER_virtual/kernel = "linux-tinker-board"
 PREFERRED_VERSION_linux-tinker-board = "4.4.103"
 
-SERIAL_CONSOLES = "115200;ttyS2"
+SERIAL_CONSOLES = "115200;ttyS3"
 KERNEL_IMAGETYPE = "zImage"
 KBUILD_DEFCONFIG = "miniarm-rk3288_defconfig"
 
