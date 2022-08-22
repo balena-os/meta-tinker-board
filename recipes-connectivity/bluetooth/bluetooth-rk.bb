@@ -12,7 +12,7 @@ SRC_URI = " \
 "
 SRCREV = "456b6008e495d40793eba5c8abcad8d09c65f6ea"
 
-RDEPENDS_${PN} += "linux-firmware-rtl8723b"
+RDEPENDS_${PN} += "linux-firmware-rtl8723b-bt"
 
 S = "${WORKDIR}/git/realtek/rtk_hciattach"
 

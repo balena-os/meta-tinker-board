@@ -21,4 +21,4 @@ SPL_BINARY ?= "u-boot-spl-dtb.bin"
 KERNEL_DEVICETREE = "rk3288-miniarm.dtb"
 UBOOT_MACHINE = "tinker-rk3288_defconfig"
 
-MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "bluetooth-rk linux-firmware-rtl8723b"
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "bluetooth-rk linux-firmware-rtl8723b-bt"
